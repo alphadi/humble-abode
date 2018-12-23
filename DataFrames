@@ -1,0 +1,15 @@
+data = {'Company':['GOOG','GOOG','MSFT','MSFT','FB','FB'],
+       'Person':['Sam','Charlie','Amy','Vanessa','Carl','Sarah'],
+       'Sales':[200,120,340,124,243,350]}
+       
+       df = pd.DataFrame(data)
+       
+       by_comp = df.groupby("Company")
+       
+       df.groupby('Company').mean()
+       
+       by_comp.std()
+       
+       by_comp.describe().transpose()
+       
+       by_comp.describe().transpose()['GOOG']
